@@ -1,0 +1,69 @@
+.topo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.topo-titulo{
+    font-family: var(--fonte-jersey);
+    color: var(--cor-titulo);
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.topo-imagem{
+    width: 10rem;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.topo-input{
+    height: 2.3rem;
+    background-color: var(--salmao);
+    border: none;
+    border-radius: 1rem;
+    width: 100%;
+    font-family: var(--fonte-jost);
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+    color: var(--cor-texto);
+    outline-style: none;
+}
+
+input::placeholder {
+    color: var(--cor-texto); /* Define a cor do placeholder */
+}
+
+.topo-btn{
+    background: var(--rosa);
+    border: none;
+    height: 2.5rem;
+    font-size: 1.7rem;
+    font-family: var(--fonte-jersey);
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.904);
+    letter-spacing: 1px;
+    padding: 1.3rem;
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 1px 3px 1px rgba(255, 0, 0, 0.212);
+    cursor: pointer;
+}
+
+.topo-btn:hover{
+    transform: scale(1.07);
+}
+
+
+
+  
