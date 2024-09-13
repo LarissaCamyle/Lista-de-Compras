@@ -24,19 +24,25 @@ body{
     flex-direction: column;
     align-items: center;
     font-family: var(--fonte-jost);
+    overflow-x: hidden;
 }
 
 main{
     margin-top: 2%;
     background-color: var(--verde);
     width: 30rem;
-    height: 90%;
     border-radius: 30px;
     border: solid 10px var(--amarelo);
-
     display: flex;
     justify-content: start;
     flex-direction: column;
     align-items: center;
-    padding-top: 1.5rem;
+    padding: 1.5rem 0rem;
 }
+
+@media screen and (max-width: 500px) {
+    main{
+        width: 95%;
+    }
+}
+

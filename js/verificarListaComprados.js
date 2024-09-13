@@ -1,9 +1,9 @@
 export function verificarComprados(compradosUl, compradosDiv) {
-    // Verifica se a ul de comprados tem itens
-    console.log("verificando comprados");
     if (compradosUl.childElementCount === 0) {
-        compradosDiv.style.display = "none"; // Esconder o div se a ul estiver vazia
+        // Esconder o div se a ul estiver vazia
+        compradosDiv.style.display = "none"; 
     } else {
-        compradosDiv.style.display = "block"; // Mostrar o div se a ul tiver itens
+        // Mostrar o div se a ul tiver itens
+        compradosDiv.style.display = "block"; 
     }
 }

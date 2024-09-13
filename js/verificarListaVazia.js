@@ -1,8 +1,8 @@
 const mensagemListaVazia = document.querySelector(".mensagem-lista-vazia");
 
 export function verificarListaVazia(lista){
-    //se tem elementos filhos
-    if(lista.childElementCount === 0){
+    //se tem elementos filhos do tipo li
+    if(lista.querySelectorAll("li").length === 0){
         //aparece mensagem de lista vazia
         mensagemListaVazia.style.display = "block";
     }else{

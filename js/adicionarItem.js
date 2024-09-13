@@ -11,9 +11,24 @@ export function adicionarItem(evento){
     //não recarregar a página
     evento.preventDefault();
 
+    //se estiver vazio o input para a execucao
+    if (item.value === "" || item.value.trim() === ""){
+        alert('Digite um item!');
+        item.value = "";
+        return;
+    }
+
+    //cria o item da lista
     const listaItem = criarItemDaLista(item.value);
     listaCompras.appendChild(listaItem);
+    //limpa o input
+    item.value = "";
 
+    //adiciona ao html
     verificarListaVazia(listaCompras);
+
+    //verifica lista de comprados
     verificarComprados(compradosUl, compradosDiv);
+
+
 }

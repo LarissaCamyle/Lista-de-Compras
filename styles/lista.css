@@ -1,5 +1,6 @@
 .lista{
     width: 95%;
+    overflow: hidden;
 }
 
 .lista-titulo{
@@ -37,6 +38,7 @@ hr{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    text-wrap: wrap;
 }
 
 .lista-nome-item{
@@ -79,4 +81,54 @@ hr{
 
 .lista-btn img{
     height: 2rem;
+}
+
+.lista-de-comprados{
+    display: none;
+}
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+    .lista-item{
+        font-size: 0.9rem;
+    }
+    .lista-titulo{
+        font-size: 1.9rem;
+        padding-left: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    
+    .mensagem-lista-vazia{
+        font-size: 1.2rem;
+        text-wrap: wrap;
+    }
+    .lista-nome-item{
+        font-size: 1.1rem;
+        font-weight: 500;
+        gap: 0.5rem;
+    }
+    .lista-checkbox-customizado{
+        height: 15px;
+        width: 15px;
+    }
+    .lista-btn img{
+        height: 1.6rem;
+    }
+    
+}
+
+@media screen and (max-width: 350px) {
+    .mensagem-lista-vazia{
+        font-size: 1.1rem;
+        text-wrap: wrap;
+    }
+    .lista-nome-item{
+        font-size: 0.9rem;
+    }
+    .lista-checkbox-customizado{
+        height: 14px;
+        width: 14px;
+    }
+    .lista-btn img{
+        height: 1.6rem;
+    }
 }

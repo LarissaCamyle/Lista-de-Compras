@@ -64,6 +64,33 @@ input::placeholder {
     transform: scale(1.07);
 }
 
+@media screen and (min-width: 350px) and (max-width: 450px) {
+    .topo-titulo{
+        font-size: 2.2rem;
+    }
+    .topo-btn{
+        font-size: 1.5rem;
+        padding: 1.1rem;
+    }
+    .topo-imagem{
+        width: 8rem;
+    }
+}
 
+@media screen and (max-width: 350px){
+    .topo-titulo{
+        font-size: 2rem;
+    }
+    .topo-btn{
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
+    .topo-imagem{
+        width: 8rem;
+    }
+    .topo-input{
+        width: 107%;
+    }
+}
 
   
